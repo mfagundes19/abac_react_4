@@ -1,21 +1,19 @@
 import './App.css';
+import TextControl from './Component/TextControl/TextControl';
 
 function App() {
   return (
     <div>
-        <h1>Helo World</h1>
-        <h2>Helo World</h2>
-        <h3>Helo World</h3>
-        <h4>Helo World</h4>
-        <h5>Helo World</h5>
-        <h6>Helo World</h6>
-        <i>Hello World</i>
-        <br></br><br></br>
-        <u>Hello World</u>
-        <br></br><br></br>
-        <b>Hello World</b>
-        <br></br><br></br>
-        <u><b>Hello World</b></u>
+        <TextControl name="Hello Word" type="h1"></TextControl>
+        <TextControl name="Hello Word" type="h2"></TextControl>
+        <TextControl name="Hello Word" type="h3"></TextControl>
+        <TextControl name="Hello Word" type="h4"></TextControl>
+        <TextControl name="Hello Word" type="h5"></TextControl>
+        <TextControl name="Hello Word" type="span"></TextControl><br/><br/>
+        <TextControl name="Hello Word" type="span-italic"></TextControl><br/><br/>
+        <TextControl name="Hello Word" type="span-bold"></TextControl><br/><br/>
+        <TextControl name="Hello Word" type="span-color" color="red"></TextControl><br/><br/>
+        <TextControl name="Hello Word" type="span-color" color="blue"></TextControl><br/><br/>
     </div>
   );
 }
